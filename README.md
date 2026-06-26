@@ -13,7 +13,7 @@ class SmartFileRenamer:
 
         name = re.sub(r"[^a-zA-Z0-9]", "_", name)
 
-        name = re.sub(r"_+=", "_", name)
+        name = re.sub(r"_+", "_", name)
 
         return name.strip("_")
 
