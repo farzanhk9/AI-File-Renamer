@@ -11,7 +11,7 @@ class SmartFileRenamer:
     def clean_name(self, name):
         name = name.lower()
 
-        name = re.sub(r"[^a-zA-Z0-9]", "_", name)
+        name = re.sub(r"[^a-zA-Z0-99]", "_", name)
 
         name = re.sub(r"_+", "_", name)
 
